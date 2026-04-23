@@ -22,18 +22,18 @@ export default function Home() {
                 <div className="relative z-10 flex flex-col items-center justify-center w-full select-none" data-aos="zoom-out">
                     
                     <h2 className=" hidden md:block absolute text-[100px] md:text-[200px] lg:text-[300px] bungee-regular text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.1)] leading-none translate-y-[-20px]">
-                        Portofolio
+                        CHRONICLES
                     </h2>
 
                     <h1 className="relative text-5xl md:text-8xl lg:text-[180px] bungee-regular text-white drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] tracking-tighter leading-none">
-                        Portofolio
+                        EPILOG SMK
                     </h1>
 
                     <div className="mt-4 flex flex-col items-center">
-                        <p className="text-[#570005] font-mono tracking-[0.5em] text-sm md:text-xl uppercase font-bold">
+                        <p className="bg-gradient-to-r from-white to-red-700 bg-clip-text text-transparent font-mono tracking-[0.5em] text-sm md:text-xl uppercase font-bold">
                             Frontend Developer
                         </p>
-                        <div className="h-[2px] w-12 bg-[#570005] mt-2 animate-pulse"></div>
+                        <div className="h-[2px] w-12 bg-white mt-2 animate-pulse"></div>
                     </div>
                 </div>
 
@@ -52,64 +52,82 @@ export default function Home() {
 
 
             <section id="about" className="relative w-full min-h-screen flex items-center justify-center bg-[#0B1120] py-20 overflow-hidden">
-                <div className="absolute top-68 -right-53 text-[100px] font-bold text-white/20 select-none pointer-events-none rotate-90">
-                    ABOUT ME
+                <div className="absolute top-68 -right-53 text-[100px] font-bold text-white/5 select-none pointer-events-none rotate-90 bungee-regular">
+                    THE STORY
                 </div>
 
                 <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
                     
                     <div className="relative group" data-aos="fade-right">
                         <div className="relative w-full aspect-square max-w-md mx-auto">
-                            <div className="absolute inset-0 border-2 border-white translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
-                            <div className="absolute inset-0 bg-[#570005] overflow-hidden">
+                            <div className="absolute inset-0 border-2 border-[#d1a355] translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                            <div className="absolute inset-0 bg-[#570005] overflow-hidden group-hover:shadow-[0_0_30px_rgba(87,0,5,0.5)] transition-all duration-500">
                                 <img 
                                     src="img/me/me4.png" 
                                     alt="Profile" 
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 opacity-80"
+                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-80 group-hover:opacity-100 group-hover:scale-105"
                                 />
                             </div>
 
-                            <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl hidden md:block">
-                                <p className="text-[#0B1120] font-bold text-3xl">PPLG</p>
-                                <p className="text-[#570005] text-xs font-bold tracking-widest uppercase">Student</p>
+                            <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-md border border-white/20 p-6 shadow-xl hidden md:block">
+                                <p className="text-white font-bold text-3xl drop-shadow-md">PPLG</p>
+                                <p className="text-[#d1a355] text-xs font-bold tracking-widest uppercase mt-1">Class of 2026</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="space-y-8" data-aos="fade-left">
+                    <div className="space-y-3" data-aos="fade-left">
                         <div>
-                            <h3 className="text-white font-mono tracking-widest mb-2">INTRODUCING</h3>
+                            <h3 className="text-[#d1a355] font-mono tracking-widest mb-1 text-sm">CHAPTER 1: THE BEGINNING</h3>
                             <h2 className="text-5xl text-white md:text-6xl font-bold bungee-regular leading-tight">
-                                ABOUT <span className="text-transparent [-webkit-text-stroke:1px_white]">ME</span>
+                                BEHIND THE <span className="text-transparent [-webkit-text-stroke:1px_#d1a355]">CODE</span>
                             </h2>
-                            <div className="h-1 w-20 bg-[#570005] mt-4"></div>
+                            <div className="h-1 w-20 bg-[#570005] "></div>
                         </div>
 
-                        <div className="space-y-4 text-gray-400 text-lg leading-relaxed max-w-xl">
+                        <div className="space-y-3 text-gray-400 text-lg leading-relaxed max-w-xl">
                             <p>
-                                Haloo Cewe Mark Disinii kenalinn nama saya <span className="text-white font-semibold">Dwi Rahmawati</span>, seorang Frontend Developer yang berfokus pada pembuatan antarmuka web yang estetis dan fungsional. 
+                                Haloo Cewe Mark Disinii! Kenalin, aku <span className="text-white font-semibold">Dwi Rahmawati</span>. Halaman ini bukan sekadar informasi, tapi kapsul waktu yang merangkum perjalananku sebagai Siswa PPLG selama di SMK.
                             </p>
                             <p>
-                                Sebagai siswa <span className="text-white italic">PPLG di SMKN 3 Pamekasan</span>, saya menggabungkan logika pemrograman dengan sentuhan desain modern untuk menciptakan pengalaman digital yang menarik.
+                                Tiga tahun belajar di <span className="text-white italic">SMKN 3 Pamekasan</span> penuh dengan logika, *error* yang bikin begadang, sampai kepuasan saat kode akhirnya berjalan mulus. Di sinilah aku menggabungkan barisan kode dengan sentuhan desain modern.
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4 pt-4 text-white text-3xl font-mono font-bold drop-shadow-[0_0_10px_rgba(220,38,38,0.8)] animate-pulse">
-                            <div className="flex items-center space-x-3">
-                                <div className="h-2 w-2 bg-white rotate-45"></div>
-                                <span className="font-mono text-sm">React.js</span>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <div className="h-2 w-2 bg-white rotate-45"></div>
-                                <span className="font-mono text-sm">Tailwind CSS</span>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <div className="h-2 w-2 bg-white rotate-45"></div>
-                                <span className="font-mono text-sm">Laravel</span>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <div className="h-2 w-2 bg-white rotate-45"></div>
-                                <span className="font-mono text-sm">UI/UX Design</span>
+                        <div className="pt-4 border-t border-white/10 max-w-xl">
+                            <p className="text-[#d1a355] font-mono text-xs tracking-widest uppercase mb-6">Tech Stack In Use</p>
+                            <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center">
+                                
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="HTML5" />
+                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">HTML5</span>
+                                </div>
+
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="CSS3" />
+                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">CSS3</span>
+                                </div>
+
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="JS" />
+                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">JS</span>
+                                </div>
+
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="React" />
+                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">React</span>
+                                </div>
+
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="Tailwind" />
+                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">Tailwind</span>
+                                </div>
+
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="Laravel" />
+                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">Laravel</span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
