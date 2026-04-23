@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-900: #4A0811;
+  --color-maroon-800: #7B0D1E;
+  --color-maroon-700: #A01428;
+  --color-maroon-600: #C01835;
+  --color-surface:    #1A0A0E;
+  --color-surface2:   #220D13;
+
+  --animate-orb-float:        orbFloat 8s ease-in-out infinite;
+  --animate-spin-ring:        spinRing 12s linear infinite;
+  --animate-spin-ring-rev:    spinRing 8s linear infinite reverse;
+  --animate-float-badge:      floatBadge 3s ease-in-out infinite;
+  --animate-status-pulse:     statusPulse 2s ease-in-out infinite;
+  --animate-scroll-bounce:    scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes orbFloat {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33%      { transform: translate(30px,-20px) scale(1.05); }
+  66%      { transform: translate(-20px,30px) scale(0.95); }
+}
+
+@keyframes spinRing {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes floatBadge {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-8px); }
+}
+
+@keyframes statusPulse {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0.4; }
+}
+
+@keyframes scrollBounce {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%     { transform: translateX(-50%) translateY(10px); }
+}
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.skill-fill::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: inherit;
+  box-shadow: 0 0 8px currentColor;
+}
