@@ -21,7 +21,7 @@ export const Layout = () => {
     useEffect(() => {
         const audio = new Audio("/audio/lagu.mp3");
         audio.loop = true;
-        audio.volume = 0.5;
+        audio.volume = 0.1;
         audioRef.current = audio;
 
         AOS.init({ duration: 1000, once: true });
