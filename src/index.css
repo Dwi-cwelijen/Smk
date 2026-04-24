@@ -58,3 +58,9 @@
   background: inherit;
   box-shadow: 0 0 8px currentColor;
 }
+
+
+
+@theme {
+  --animate-spin-slow: spin 3s linear infinite;
+}
