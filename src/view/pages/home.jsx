@@ -100,32 +100,41 @@ export default function Home() {
                                 
                                 <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="HTML5" />
-                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">HTML5</span>
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">HTML5</span>
                                 </div>
 
                                 <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="CSS3" />
-                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">CSS3</span>
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">CSS3</span>
                                 </div>
 
                                 <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="JS" />
-                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">JS</span>
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">JS</span>
+                                </div>
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="PHP" />
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">PHP</span>
+                                </div>
+
+                                <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="Git" />
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">Git</span>
                                 </div>
 
                                 <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="React" />
-                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">React</span>
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">React</span>
                                 </div>
 
                                 <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="Tailwind" />
-                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">Tailwind</span>
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">Tailwind</span>
                                 </div>
 
                                 <div className="relative group p-4 bg-white/5 border border-white/10 flex items-center justify-center transition-all hover:border-[#d1a355]/50 hover:bg-[#d1a355]/5" style={{ borderRadius: '1rem' }}>
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" className="w-10 h-10 transition-all group-hover:scale-110" alt="Laravel" />
-                                    <span className="absolute -bottom-6 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">Laravel</span>
+                                    <span className="absolute -bottom-5 text-[10px] text-gray-600 font-mono opacity-0 group-hover:opacity-100 group-hover:text-white transition-opacity uppercase">Laravel</span>
                                 </div>
 
                             </div>
