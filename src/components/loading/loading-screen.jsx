@@ -27,7 +27,7 @@ const LoadingScreen = ({ isLoading, onLoadingComplete, connectionSpeed = "normal
       switch (connectionSpeed) {
         case "slow": return 0.5;
         case "fast": return 3;
-        default: return 1.5;
+        default: return 3.0;
       }
     };
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Outlet } from "react-router-dom";
 import { data } from "../../core/mock/nav-data";
-import { Music2, Home, CircleUser, Newspaper, Headset,Play, SkipBack, SkipForward, Shuffle, Repeat } from 'lucide-react';
+import { Music2, Home, CircleUser, Newspaper, Headset,Play, SkipBack, SkipForward, Shuffle, Repeat,ImageMinus } from 'lucide-react';
 import { HashLink } from "react-router-hash-link";
-import { FaInstagram, FaGlobe, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaInstagram, FaGlobe, FaEnvelope, FaPhone,FaWhatsapp,FaGithub } from "react-icons/fa";
 import Typewriter from 'typewriter-effect';
 import LoadingScreen, { useLoading } from "../../components/loading/loading-screen";
 import AOS from 'aos';
@@ -19,7 +19,7 @@ export const Layout = () => {
     const [showStartButton, setShowStartButton] = useState(false); 
 
     useEffect(() => {
-        const audio = new Audio("/audio/lagu.mp3");
+        const audio = new Audio("/audio/lagu.mp3"); 
         audio.loop = true;
         audio.volume = 0.1;
         audioRef.current = audio;
@@ -98,7 +98,7 @@ export const Layout = () => {
         if (name.toLowerCase().includes('home')) return <Home className={style} />;
         if (name.toLowerCase().includes('about')) return <CircleUser className={style} />;
         if (name.toLowerCase().includes('project')) return <Newspaper className={style} />;
-        if (name.toLowerCase().includes('kontak')) return <Headset className={style} />;
+        if (name.toLowerCase().includes('galery')) return <ImageMinus className={style} />;
         return <Home className={style} />;
     };
 
@@ -160,7 +160,7 @@ export const Layout = () => {
                         <div className="container mx-auto px-6 lg:px-16 flex justify-between items-center">
                             <HashLink smooth to="#home" className="flex items-center gap-3">
                                 <h1 className={`text-xl font-bold transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}>
-                                    <Typewriter options={{ strings: ['DWI RAHMAWATI', 'SISWA SMK'], autoStart: true, loop: true }} />
+                                    <Typewriter options={{ strings: ['DWI RAHMAWATI', 'PACAR MARK DISINII'], autoStart: true, loop: true }} />
                                 </h1>
                             </HashLink>
 
@@ -215,71 +215,46 @@ export const Layout = () => {
                         </div>
                     </div>
 
-                    <footer className=" bg-[#0B1120] text-gray-400 py-12 px-6 border-t border-gray-800 font-sans">
-                        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-4">
-                                    <img src="/images/SMKNLOGO1.png" alt="Logo" className="w-12 h-14 object-contain" />
-                                    <div>
-                                        <h2 className="text-white text-[20px] font-semibold uppercase">DWI RAHMAWATI</h2>
-                                        <p className="text-white font-medium text-[12px]">Frontend Developer</p>
-                                    </div>
-                                </div>
-                                <p className="text-[14px] leading-relaxed">
-                                    Sebagai Frontend Developer, saya fokus menciptakan tampilan yang tidak hanya 
-                                    indah tetapi juga fungsional, responsif, dan nyaman digunakan oleh pengguna.
-                                </p>
-                                <div className="flex gap-4 mt-6 text-red-500">
-                                    <a href="https://www.instagram.com/smknegeri3pamekasan?igsh=MThmYzFoN29kODEyZA==" 
-                                    className="hover:text-red-800 transition text-lg" target="_blank" rel="noopener noreferrer">
-                                        <FaInstagram />
-                                    </a>
-                                    <a href="https://smkn3pamekasan.sch.id/" className="hover:text-red-800 transition text-lg" target="_blank" rel="noopener noreferrer">
-                                        <FaGlobe />
-                                    </a>
-                                    <a href="mailto:smkn3pmk@yahoo.com" className="hover:text-red-800 transition text-lg" target="_blank" rel="noopener noreferrer">
-                                        <FaEnvelope />
-                                    </a>
-                                    <a href="tel:+62324322576" className="hover:text-red-800 transition text-lg" target="_blank" rel="noopener noreferrer">
-                                        <FaPhone />
-                                    </a>
+                    <footer className="bg-[#0B1120] text-gray-400 py-8 px-6 border-t border-gray-800 font-sans">
+                        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                            <div className="flex items-center gap-4">
+                                <img src="/images/SMKNLOGO1.png" alt="Logo" className="w-10 h-12 object-contain" />
+                                <div>
+                                    <h2 className="text-white text-[18px] font-semibold uppercase tracking-wider">DWI RAHMAWATI</h2>
+                                    <p className="text-gray-400 font-medium text-[11px]">Frontend Developer</p>
                                 </div>
                             </div>
 
-                            <div className=" hidden md:block">
-                                <h3 className="text-white font-bold text-[15px] mb-4 border-l-4 border-red-600 pl-3">About Me</h3>
-                                <p className="text-[13px] leading-relaxed text-justify text-gray-300">
-                                    Saya adalah seorang Pelajar SMKN 3 Pamekasan yang tertarik dibidang Frontend Developer yang dimana bidang ini
-                                    berfokus pada pembuatan tampilan web yang modern, responsif, dan user-friendly.
-                                    Saya juga terus belajar dan mengembangkan kemampuan untuk menciptakan pengalaman pengguna yang lebih baik melalui
-                                    desain yang clean dan performa yang optimal.
-                                </p>
+                            <div className="text-[13px] text-center md:text-left tracking-wide">
+                                <p>&copy; 2026 Dwi Rahmawati</p>
                             </div>
 
-                            <div className="hidden md:block lg:col-span-2">
-                                <h3 className="text-white font-bold text-[15px] mb-4 border-l-4 border-red-600 pl-3">What I Do</h3>
-                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-[12px] leading-snug text-gray-300">
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-red-500">•</span>
-                                        Membangun tampilan website yang modern, responsif, dan menarik
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-red-500">•</span>
-                                        Mengubah desain (UI/UX) menjadi kode yang rapi dan terstruktur
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-red-500">•</span>
-                                        Mengembangkan komponen UI yang reusable dan efisien
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-red-500">•</span>
-                                        Mengoptimalkan performa dan pengalaman pengguna
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <span className="text-red-500">•</span>
-                                        Mengelola tampilan menggunakan teknologi frontend modern.
-                                    </li>
-                                </ul>
+                            <div className="flex gap-6 text-gray-400">
+                                <a href="https://www.instagram.com/smknegeri3pamekasan?igsh=MThmYzFoN29kODEyZA==" 
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white 
+                                hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7] 
+                                transition-all duration-300 shadow-lg hover:shadow-pink-500/20"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <FaInstagram />
+                                </a>
+
+                                <a href="mailto:smkn3pmk@yahoo.com" 
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white 
+                                hover:bg-[#24292e] transition-all duration-300"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <FaGithub size={18} />
+                                </a>
+
+                                <a href="https://wa.me/62324322576" 
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white 
+                                hover:bg-[#25D366] hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] 
+                                transition-all duration-300"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <FaWhatsapp />
+                                </a>
                             </div>
                         </div>
                     </footer>
