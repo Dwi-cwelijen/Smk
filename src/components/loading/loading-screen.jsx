@@ -59,8 +59,8 @@ const LoadingScreen = ({ isLoading, onLoadingComplete, connectionSpeed = "normal
   return (
     <div className="fixed inset-0 bg-white z-50 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-12 p-6 overflow-hidden">
 
-      <div className="relative z-10 text-center flex flex-col items-center mt-10 md:mt-0" data-aos="fade-right">
-        <div className="flex justify-center space-x-1 md:space-x-2 mb-8">
+      <div className="relative z-10 text-center flex flex-col items-center mt-16 md:mt-0" data-aos="fade-right">
+        <div className="flex justify-center space-x-1 md:space-x-2">
           {letters.map((letter, index) => (
             <span
               key={index}
@@ -80,7 +80,7 @@ const LoadingScreen = ({ isLoading, onLoadingComplete, connectionSpeed = "normal
 
       <div
         data-aos="fade-left"
-        className="relative w-full max-w-xs bg-white rounded-[2.5rem] p-8 border border-gray-100 shadow-2xl"
+        className="relative w-full max-w-xs bg-white rounded-[2.5rem] mb-10 md:mb-0 p-8 border border-gray-100 shadow-2xl"
       >
         <motion.div
           animate={{ y: [0, -10, 0] }}
